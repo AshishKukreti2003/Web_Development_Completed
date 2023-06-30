@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: cursive;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid purple;
+            background-color: rgba(249, 6, 6, 0.841);
+            margin: 33px auto;
+        }
+
+        .item {
+            border: 5px solid green;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: rgb(164, 235, 72);
+        }
+
+        #fruit {
+            float: left;
+            width: 48%;
+        }
+
+        #computer {
+            float: right;
+            width: 48%;
+        }
+
+        #stationary {
+            clear: both;
+            /* float: left; */
+            width: 100%;
+        }
+
+        p,h3 {
+            /*  text-align: left; */
+            /* text-align: right; */
+            /* text-align: center; */ 
+            text-align: justify;
+        }
+        h1{
+            margin: auto;
+            width: 455px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="friutpara" class="para">
+                Lorem ipsum dolor sit amet. ipsum, dolor sit amet consectetur adipisicing elit. Illo sint, adipisci laudantium animi
+                consequuntur ex blanditiis accusantium quod facere dolores cupiditate nobis perferendis repudiandae vero
+                est ipsum sed voluptate reiciendis ad tempora beatae. Earum! ipsum dolor sit amet, consectetur
+                adipisicing elit. Cumque provident sed eaque culpa neque voluptatibus molestiae deleniti debitis, nihil
+                earum, impedit omnis fuga dicta ad esse. Distinctio facilis tempora perspiciatis?
+            </p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum ducimus voluptates voluptatibus deserunt
+                optio, minus culpa eos quis recusandae, asperiores nulla nisi, voluptas neque ratione a laboriosam
+                magnam rem repellat cupiditate fugiat iusto ab! ipsum dolor sit amet, consectetur adipisicing elit.
+                Cumque provident sed eaque culpa neque voluptatibus molestiae deleniti debitis, nihil earum, impedit
+                omnis fuga dicta ad esse. Distinctio facilis tempora perspiciatis?
+            </p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque provident sed eaque culpa neque
+                voluptatibus molestiae deleniti debitis, nihil earum, impedit omnis fuga dicta ad esse. Distinctio
+                facilis tempora perspiciatis?
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

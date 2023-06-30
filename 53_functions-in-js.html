@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JS</title>
+</head>
+<body>
+    <div class="container">
+        This is a container
+    </div>
+    <script>
+        console.log("This is op");
+
+        function greet(name, greetText="Greeting from JS"){
+            let name1 = "Name1";
+            console.log(greetText+ " "+ name);
+            console.log(name+ " is a good boy"); 
+        }
+
+        let name1 = "Ashish";
+        let name2 = "Anuj";
+        let name3 = "OP";
+        let greetText1 = "Good Morning";
+        // console.log(name1 + " is a good boy");
+        // console.log(name2 + " is a good boy");
+        // console.log(name3 + " is a good boy");
+        greet(name1, greetText1);
+        greet(name2, greetText1);
+        greet(name3);
+
+        function sum(a,b,c){
+            d=a+b+c;
+            return d;
+        }
+
+        let returnVal = sum(1,2,3);
+        console.log("The sum is: "+returnVal);
+    </script>
+</body>
+</html>

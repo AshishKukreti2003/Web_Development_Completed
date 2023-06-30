@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+
+    }
+    .card{
+        padding: 23px 12px;
+        border: 3px solid red;
+        margin: 23px 12px;
+        background-color: blueviolet;
+        /* bax shadow: offset-x offset-y color; */
+        /* box-shadow: 10px 13px green; */
+        /* box-shadow: -10px -13px green;
+        /* bax shadow: offset-x offset-y  blur-radius color; */
+        /* box-shadow: 7px 5px 10px green;  */
+        /* bax shadow: offset-x offset-y  blur-radius spread-radius color; */
+        /* box-shadow: 7px 5px 10px 15px green; */
+        /* box-shadow: inset 2px 5px red; */
+        /* multiple box-shadow */
+        box-shadow: 3px 5px green, 4px 6px red;
+    }
+    .card h2{
+        text-shadow: 3px 4px red             ;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is Web Course</h2>
+            <h2>Card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, quos voluptates repellendus deleniti, harum dolorum expedita placeat vero necessitatibus nostrum voluptatibus enim? Ad pariatur earum iure facere odio odit nisi molestias vel deleniti. Nostrum.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is HTMl Course</h2>
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, quos voluptates repellendus deleniti, harum dolorum expedita placeat vero necessitatibus nostrum voluptatibus enim? Ad pariatur earum iure facere odio odit nisi molestias vel deleniti. Nostrum.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, quos voluptates repellendus deleniti, harum dolorum expedita placeat vero necessitatibus nostrum voluptatibus enim? Ad pariatur earum iure facere odio odit nisi molestias vel deleniti. Nostrum.</p>
+        </div>
+    </div>
+</body>
+</html>

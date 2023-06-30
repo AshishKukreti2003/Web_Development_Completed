@@ -1,0 +1,45 @@
+//Inserting data in mongodb
+
+use ashishKart
+
+//For inserting the items
+
+db.items.insertOne({name:"Samsing S22 Ultra", price:100000, rating:4.8, qty: 255, sold:45})
+
+db.items.insertMany([{name:"Samsing S22 Ultra", price:100000, rating:4.8, qty: 255, sold:45},{name:"Samsing S23 Ultra", price:150000, rating:4.9, qty: 200, sold:50}])
+
+// Searching of data in mongodb
+
+db.items.find({rating: 4.8})
+
+db.items.find({rating: {$gte: 4.8}}) // rating is greater than and equal to 4.8
+
+db.items.find({rating: {$gt: 4.8}}) // rating is greator than 4.8
+
+db.items.find({rating:{$gt:3.5}, price:{$gt:50000}}) // and operator
+
+db.items.find({$or:[{rating:{$gt:3.5}}, {price:{$gt:50000}}]}) // or operator
+
+db.items.find({price:22000})
+
+// deleting items from the Mongo Database
+
+//deleteOne will delete the matching document entry and will delete the first entry in case of multi document match
+db.items.deleteOne({price:22000}) 
+
+
+db.items.deleteMany({price:22000}) 
+
+// for another collections
+db.anotherCollection.insertOne({a:100})
+
+// for update
+db.items.updateOne({name:"Samsing S22 Ultra"},{$set:{price:2}})
+ 
+db.items.updateMany({name:"Samsing S22 Ultra"},{$set:{price:2}})
+
+
+
+
+
+
