@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+
+body{
+    background: url(bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container{
+    border: 12px solid red;
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+}
