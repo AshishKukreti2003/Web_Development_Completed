@@ -15,3 +15,23 @@ body{
     top: 35%;
     left: 40%;
 }
+
+.container h1{
+    font-size: 40px;
+    border-bottom: 5px solid purple;
+    margin-bottom: 43px;
+    padding: 13px 0;
+}
+
+.box{
+    border: 2px solid purple;
+    width: 100%;
+}
+
+.box input{
+    width: 75%;
+    margin: 2px 23px;
+    border: none;
+    outline: none;
+    color: white;
+}
