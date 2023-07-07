@@ -3,3 +3,48 @@
     padding: 0;
     
 }
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 33%;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+
+.navbar{
+    display: flex;
+}
+ 
+.nav-list{
+    width: 50%;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color: green;
+}
+
+.rightnav{
+    background-color: green;
+    width: 50%;
+    text-align: right;
+}
