@@ -23,7 +23,7 @@
  
 .nav-list{
     width: 50%;
-    background-color: blue;
+    /* background-color: blue; */
     display: flex;
     align-items: center;
 }
@@ -44,7 +44,20 @@
 }
 
 .rightnav{
-    background-color: green;
+    /* background-color: green; */
     width: 50%;
     text-align: right;
+}
+
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7)url('img/bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
 }
