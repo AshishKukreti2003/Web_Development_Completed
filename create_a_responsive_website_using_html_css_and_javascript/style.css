@@ -4,6 +4,10 @@
     
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .logo{
     width: 20%;
     display: flex;
@@ -12,9 +16,10 @@
 }
 
 .logo img{
-    width: 33%;
+    width: 26%;
     border: 3px solid white;
     border-radius: 50px;
+    margin: 5px;
 }
 
 .navbar{
@@ -27,7 +32,7 @@
 }
  
 .nav-list{
-    width: 50%;
+    width: 70%;
     /* background-color: blue; */
     display: flex;
     align-items: center;
@@ -41,6 +46,8 @@
 .nav-list li a{
     text-decoration: none;
     color: white;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .nav-list li a:hover{
@@ -50,7 +57,7 @@
 
 .rightnav{
     /* background-color: green; */
-    width: 50%;
+    width: 30%;
     text-align: right;
     padding: 0 23px;
 }
@@ -80,7 +87,7 @@
     font-family: 'Courier New', Courier, monospace;
     max-width: 50%;
     margin: auto;
-    height: 75%;
+    height: 80%;
 }
 
 .firstHalf{
@@ -119,9 +126,45 @@
     background: none;
     color: white;
     cursor: pointer;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .btn-sm{
     padding: 6px 10px;
     vertical-align: middle;
+    font-size: 16px;
+}
+
+.section{
+    height: 395px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    padding: 70px;
+    background-color: aquamarine;
+}
+
+.section-left{
+    flex-direction: row-reverse;
+    margin: 70px;
+}   
+
+.para{
+    padding: 0 65px;
+}
+
+.sectionTag{
+    padding: 16px 0;
+}
+
+.sectionSubTag{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ 
+.thumbnail img{
+    width: 280px;
+    border: 2px solid black;
+    border-radius: 26px;
 }
