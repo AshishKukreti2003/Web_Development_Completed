@@ -167,4 +167,16 @@ html{
     width: 280px;
     border: 2px solid black;
     border-radius: 26px;
+    margin-top: 19px;
 }
+
+.contact{
+    background-color: wheat;
+    height: 34vh;
+
+}
+
+.text.center{
+    text-align: center;
+}
+
