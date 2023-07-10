@@ -32,7 +32,7 @@ html{
 }
  
 .nav-list{
-    width: 70%;
+    width: 84%;
     /* background-color: blue; */
     display: flex;
     align-items: center;
@@ -61,7 +61,7 @@ html{
 
 .rightnav{
     /* background-color: green; */
-    width: 30%;
+    width: 24%;
     text-align: right;
     padding: 0 23px;
 }
@@ -228,4 +228,44 @@ html{
     background-color: black;
     color: white;
     font-size: medium;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+@media only screen and (max-width: 1140px){
+    .nav-list{
+        flex-direction: column;
+    }
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    .rightnav{
+        text-align: center;
+    }
+
+    #search{
+        width: 100%;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .h-nav{
+        height: 72px;
+    }
 }
