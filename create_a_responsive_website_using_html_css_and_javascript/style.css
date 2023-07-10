@@ -46,13 +46,17 @@ html{
 .nav-list li a{
     text-decoration: none;
     color: white;
+    display: block;
+    border-radius: 50px;
+    padding: 7px 14px;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .nav-list li a:hover{
     text-decoration: none;
-    color: green;
+    color: blue;
+    background-color: white;
 }
 
 .rightnav{
@@ -176,7 +180,7 @@ html{
 
 }
 
-.text.center{
+.text-center{
     text-align: center;
 }
 
