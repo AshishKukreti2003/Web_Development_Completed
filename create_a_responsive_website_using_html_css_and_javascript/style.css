@@ -49,13 +49,13 @@ html{
     display: block;
     border-radius: 50px;
     padding: 7px 14px;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .nav-list li a:hover{
     text-decoration: none;
-    color: blue;
+    color: black;
     background-color: white;
 }
 
@@ -175,12 +175,57 @@ html{
 }
 
 .contact{
-    background-color: wheat;
-    height: 34vh;
+    background-color: rgb(215, 212, 212);
 
 }
 
 .text-center{
     text-align: center;
+    padding-top: 30px;
+   font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
 }
 
+.form{
+    max-width: 62%;
+    margin: 5px auto;
+    display: block ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.form input{
+    width: 41%;
+    padding: 17px 15px;
+    font-size: 19px;
+    border: 2px solid black;
+    border-radius: 34px;
+    margin: 15px 244px;
+}
+
+.form textarea{
+    color: black;
+    border: 2px solid black;
+    margin: 15px 260px;
+    padding: 10px 10px;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.btn-dark{
+    color: black;
+    border: 2px solid black;
+    margin: 15px 260px;
+    padding: 10px 10px;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.text-footer{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-size: medium;
+}
