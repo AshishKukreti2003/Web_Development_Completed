@@ -59,7 +59,7 @@ html{
     background-color: white;
 }
 
-.rightnav{
+.rightNav{
     /* background-color: green; */
     width: 24%;
     text-align: right;
@@ -265,7 +265,11 @@ html{
         display: block;
     }
 
-    .h-nav{
+    .h-nav-resp{
         height: 72px;
+    }
+
+    .v-class-resp{
+        opacity: 0;
     }
 }
