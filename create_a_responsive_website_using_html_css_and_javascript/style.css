@@ -251,6 +251,8 @@ html{
 
     .navbar{
         flex-direction: column;
+        height: 478px;
+        transition: all 0.7s ease-out;
     }
 
     .rightnav{
@@ -271,5 +273,10 @@ html{
 
     .v-class-resp{
         opacity: 0;
+    }
+
+    .box.main{
+        flex-direction: column-reverse;
+        max-width: 100%;
     }
 }
