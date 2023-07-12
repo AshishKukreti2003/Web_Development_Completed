@@ -279,4 +279,21 @@ html{
         flex-direction: column-reverse;
         max-width: 100%;
     }
+
+    .section{
+        flex-direction: column-reverse;
+
+    }
+    .text-small{
+        text-align: center;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+    .paras {
+    padding: 0px;
+    }
 }
