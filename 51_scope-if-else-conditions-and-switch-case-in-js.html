@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope, If Else Condition and switch case in JS</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+    <script>
+        var string1 = "This is a String";
+        var string1 = "This is a String1";
+        console.log(string1);
+
+        let a ="u";
+        {
+            let a = "a";
+            console.log(a);
+        }
+        console.log(a);
+        
+        const b ="This cannot be changed";
+        console.log(b);
+
+        // If-Else Condition
+        let age = 34;
+        if(age>18){
+            console.log("You can drink Water");
+        }
+        else{
+            console.log("You can drink Cold Drink");
+        }
+
+        //Switch Case
+        const cups = 4;
+        switch (cups) {
+            case 4:
+                console.log("The Values of Cups in 4")
+                break;
+        
+            case 5:
+                console.log("The Values of Cups in 5")
+                break;
+        
+            case 6:
+                console.log("The Values of Cups in 6")
+                break;
+        
+            case 7:
+                console.log("The Values of Cups in 7")
+                break;
+        
+            default:
+                console.log("None")
+                break;
+        }
+    </script>
+</body>
+</html>
