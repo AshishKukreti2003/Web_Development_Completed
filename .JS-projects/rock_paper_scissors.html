@@ -15,19 +15,27 @@
             <button onclick="
                 playGame('scissors');
             ">Scissors</button>
+            <p class="js-result"></p>
+            <p class="js-moves"></p>
+            <p class="js-score"></p>
             <button onclick="
                 score.wins = 0;
                 score.losses = 0;
                 score.ties = 0;
                 localStorage.removeItem('score');
+                updateScoreElement();
             ">Reset Score</button>
         </p>
+        
         <script>
             const score = JSON.parse(localStorage.getItem('score')) || {
-                    wins: 0,
-                    losses: 0,
-                    ties: 0
+                wins: 0,
+                losses: 0,
+                ties: 0
             }
+
+            updateScoreElement();
+
             function playGame(playerMove){
                 const ComputerMove = pickComputerMove();
                 let result = '';
@@ -67,8 +75,18 @@
 
                 localStorage.setItem('score', JSON.stringify(score));
 
-                alert(`You choose ${playerMove}. Computer Choose ${ComputerMove}. ${result} 
-Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`);
+                updateScoreElement();
+
+                document.querySelector('.js-result').innerHTML = result;
+
+                document.querySelector('.js-moves').innerHTML = `You ${playerMove} - ${ComputerMove} Computer`;
+
+//                 alert(`You choose ${playerMove}. Computer Choose ${ComputerMove}. ${result} 
+// Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`);
+            }
+
+            function updateScoreElement(){
+                document.querySelector('.js-score').innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
             }
 
             function pickComputerMove(){
@@ -83,6 +101,7 @@ Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`);
                 }
                 return ComputerMove;
             }
+
         </script>
     </body>
 </html>
