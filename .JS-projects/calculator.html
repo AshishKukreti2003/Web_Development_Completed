@@ -42,21 +42,37 @@
             updateCalculation('.')">.</button>
             <button onclick="
                 calculation = eval(calculation);
-                console.log(calculation)">=</button>
+                // console.log(calculation)
+                displayResult();    
+                localStorage.setItem('calculation',calculation);
+                ">=</button>
             <button onclick="
             updateCalculation('/')">/</button>
         </p>
         <button onclick="
         calculation = ''
-        console.log(calculation)">Clear
+        // console.log(calculation)
+        displayResult();
+        localStorage.setItem('calculation',calculation);
+        ">Clear
         </button>
+
+        <p class="js-result"></p>
     </body>
     <script>
-        let calculation = '';
+        let calculation = localStorage.getItem('calculation') || '';
 
+        displayResult();
+        
         function updateCalculation(value){
             calculation+=value;
-            console.log(calculation);
+            // console.log(calculation);
+            displayResult();
+            localStorage.setItem('calculation', calculation);
         }
-    </script>
+
+        function displayResult(){
+            document.querySelector('.js-result').innerHTML = calculation;
+        }
+        </script>
 </html>
